@@ -1,3 +1,30 @@
 <%- include('partials/header'); %>
 
+<div class="showcase">
+    <div class="text-showcase">
+        <span class="text first-text">I'm </span>
+        <span class="text second-text"></span>
+        <script>
+        const text = document.getElementsByClassName("second-text");
+
+            const textLoad = () => {
+                    setTimeout(() => {
+                    text[0].textContent = "Saumya Vatsa";
+                    },0);
+                    setTimeout(() => {
+                    text[0].textContent = "a Web Developer";
+                    },4000);
+                    setTimeout(() => {
+                    text[0].textContent = "a YouTuber";
+                    },8000);
+            };
+            textLoad();
+            window.setInterval(textLoad,12000)
+        </script>
+    </div>
+    <div class="per-img">
+        <img src="Images/mine.jpg" alt="">
+    </div>
+</div>
+
 <%- include('partials/footer'); %>

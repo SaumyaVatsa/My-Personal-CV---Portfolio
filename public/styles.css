@@ -67,3 +67,66 @@ footer p{
     padding-bottom: 10px;
     bottom: 0;
 }
+
+/* Showcase */
+
+.showcase{  
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.text-showcase{
+    width: 60%;
+    padding: 100px; 
+    padding-top: 210px;
+
+}
+
+.text{
+    position: relative;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.first-text{
+    color: #0F4C75;
+}
+
+.second-text{
+    color: #BBE1FA;
+}
+
+.second-text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 3px solid #BBE1FA;
+    background-color: #1B262C;
+    animation: animate 4s steps(12) infinite;
+} 
+
+@keyframes animate{
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.per-img{
+    position: absolute;
+    padding: 30px;
+    padding-right: 40px;
+    right: 10px;
+}
+
+.per-img img{
+    height: 500px;
+    border-radius: 100px;
+}
