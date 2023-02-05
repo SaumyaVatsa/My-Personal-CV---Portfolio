@@ -154,10 +154,11 @@ footer p{
 .about-showcase .img img{
     height: 500px;
     border-radius: 20px;
-    box-shadow: 5px 5px 20px 1px #BBE1FA;
+    box-shadow: 5px 5px 20px 1px #0F4C75;
 }
 
 .about-showcase .about button{
+    position: relative;
     margin-top: 20px;
     padding: 2px;
     height: 50px;
@@ -167,9 +168,78 @@ footer p{
     border: none;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.5s;   
+    transition: 0.5s;
+    z-index: 1;
 }
-.about-showcase .about button:hover{
+
+.about-showcase .about button:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
     background-color: #BBE1FA;
+    transform: scaleX(0);
+    transition:  transform 300ms ease-in-out;
+    transform-origin: left;
+}
+
+.about-showcase .about button:hover::before,
+.about-showcase .about button:focus::before{
+    transform: scaleX(1);
+}
+
+.about-showcase .about button:hover,
+.about-showcase .about button:focus{
     color: #0F4C75;
 }
+
+/* Experience Showcase */
+
+.exp-showcase{
+    margin: 20px;
+    margin-top: 50px;
+    color: #3282B8;
+}
+
+.exp-showcase .year{
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #BBE1FA;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.exp-showcase h2{
+    cursor: pointer;
+    margin-bottom: 150px;
+    text-align: center;
+    color: #BBE1FA;
+    padding-bottom: 5px;
+    border: 3px solid #BBE1FA;
+    width: 400px;
+    margin-left: 37%;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.exp-showcase h2:hover{
+    color: #0F4C75;
+    background-color: #BBE1FA;
+    border-color: #0F4C75;
+}
+
+.exp-showcase hr{
+    height: 8px;
+    margin-top: 10px;
+    width: 700px;
+    background-color: #BBE1FA;
+}
+
+.exp-showcase .timeline{
+    display: flex;
+    justify-content: space-between;
+}
+
