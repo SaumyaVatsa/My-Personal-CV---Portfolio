@@ -202,6 +202,7 @@ footer p{
     margin: 20px;
     margin-top: 50px;
     color: #3282B8;
+    position: relative;
 }
 
 .exp-showcase .year{
@@ -214,7 +215,7 @@ footer p{
 
 .exp-showcase h2{
     cursor: pointer;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
     text-align: center;
     color: #BBE1FA;
     padding-bottom: 5px;
@@ -243,3 +244,40 @@ footer p{
     justify-content: space-between;
 }
 
+.exp-showcase .dialog-box{
+    visibility: hidden;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 20px;
+    position: absolute;
+    height: fit-content;
+    width: 300px;
+    background-color: #BBE1FA;
+    top: 160px;
+    transition: 0.5s;
+}
+
+#t2021{
+    top: 340px;
+    left: 560px;
+}
+
+#t2022{
+    top: 155px;
+    width: 350px;
+    right: 0;
+    margin-right: 5px;
+}
+
+.dialog-box .text1{
+    font-weight: bold;
+    color: #1B262C;
+    font-size: 1.5rem;
+    padding: 2px;
+}
+
+.dialog-box .text2{
+    color: #0F4C75;
+    font-size: 1rem;
+    font-style: italic;
+}

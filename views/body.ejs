@@ -42,16 +42,33 @@
 <div class="exp-showcase">
     <h2 id="exp-title" onmouseover="expTitleChange()" onmouseout="expTitleChange1()">Experience</h2>
     <div class="timeline">
-        <p class="year">2019</p>
+        <p class="year" onclick="show2019()" onmouseout="hide2019()">2019</p>
         <hr>
-        <p class="year">2021 </p>
+        <p class="year" onclick="show2021()" onmouseout="hide2021()">2021 </p>
         <hr>
-        <p class="year">2022</p>
+        <p class="year" onclick="show2022()" onmouseout="hide2022()">2022</p>
+    </div>
+    <div class="dialog-box" id="t2019">
+        <p class="text1">DAV Public School</p>
+        <p class="text2">Passed 10th with 95.2%</p>
+    </div>
+    <div class="dialog-box" id="t2021">
+        <p class="text1">DAV Public School</p>
+        <p class="text2">Passed 12th with 88.8%</p>
+        <p class="text1">VIT University</p>
+        <p class="text2">Admission in BCA program</p>
+    </div>
+    <div class="dialog-box" id="t2022">
+        <p class="text1" >IIT Madras</p>
+        <p class="text2" >Admission in BS (Data Science)</p>
     </div>
 </div>
 
 <script>
     const expTitle = document.getElementById('exp-title');
+    const date2019 = document.getElementById('t2019');
+    const date2021 = document.getElementById('t2021');
+    const date2022 = document.getElementById('t2022');
     
     const expTitleChange =  ()=>{
         expTitle.textContent = 'My Journey';
@@ -59,6 +76,25 @@
 
     const expTitleChange1 =  ()=>{
         expTitle.textContent = 'Experience';
+    }
+
+    const show2019 = ()=>{
+        date2019.style.visibility ="visible"
+    }
+    const hide2019 = ()=>{
+        date2019.style.visibility ="hidden"
+    }
+    const show2021 = ()=>{
+        date2021.style.visibility ="visible"
+    }
+    const hide2021 = ()=>{
+        date2021.style.visibility ="hidden"
+    }
+    const show2022 = ()=>{
+        date2022.style.visibility ="visible"
+    }
+    const hide2022 = ()=>{
+        date2022.style.visibility ="hidden"
     }
 </script>
 
