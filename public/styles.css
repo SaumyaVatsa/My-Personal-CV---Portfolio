@@ -213,7 +213,7 @@ footer p{
     border-radius: 10px;
 }
 
-.exp-showcase h2{
+.title{
     cursor: pointer;
     margin-bottom: 250px;
     text-align: center;
@@ -226,7 +226,7 @@ footer p{
     transition: 0.5s;
 }
 
-.exp-showcase h2:hover{
+.title:hover{
     color: #0F4C75;
     background-color: #BBE1FA;
     border-color: #0F4C75;
@@ -259,7 +259,7 @@ footer p{
 
 #t2021{
     top: 340px;
-    left: 560px;
+    left: 580px;
 }
 
 #t2022{
