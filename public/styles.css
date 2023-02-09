@@ -59,13 +59,19 @@ a:hover{
 
 /* Footer */
 
+footer{
+    margin-top: 20px;
+    bottom: 0;
+    background-color: #BBE1FA;
+    height: fit-content;
+    color: #0F4C75;
+    padding: 20px;
+}
+
 footer p{
-    color: #BBE1FA;
-    position: absolute;
+    font-size: 1rem;
     text-align: center;
     width: 100%;
-    padding-bottom: 10px;
-    bottom:0;
 }
 
 /* Showcase */
@@ -280,4 +286,52 @@ footer p{
     color: #0F4C75;
     font-size: 1rem;
     font-style: italic;
+}
+
+/* Skills Showcase */
+
+.skills-showcase{
+    margin: 10px;
+    margin-top: 250px;
+}
+
+.skills-showcase .title{
+    margin-bottom: 100px;
+}
+
+.skill-row{
+    margin: 20px;
+    margin-left: 50px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 100px;
+}
+
+.skill-row img{
+    cursor: pointer;
+    padding: 10px;
+    height: 150px;
+    width: 190px;
+    transition: 0.5s;
+}
+
+.skill-row img:hover{
+    height: 190px;
+    width: 250px;
+}
+
+.react{
+    cursor: pointer;
+    padding: 10px;
+    height: 150px;
+    width: 190px;
+    transition: 0.5s;
+    text-align: center;
+    margin-left: 42%;
+}
+
+.react:hover{
+    height: 190px;
+    width: 250px;
 }

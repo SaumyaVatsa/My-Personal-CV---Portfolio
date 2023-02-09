@@ -33,7 +33,7 @@
     </div>
     <div class="about">
         <p> <%= aboutDetail %></p>
-        <form action="/contact" method="get">
+        <form action="/contact" method="get" class="btn">
             <button>Contact Me</button>
         </form>
     </div>
@@ -98,8 +98,34 @@
     }
 </script>
 
-<div class="skills-showcase">
-    <h2 class="title">Skills</h2>
+<div class="skills-showcase" id="skills">
+    <h2 id="skill-title" class="title" onmouseover="skillChange1()" onmouseout="skillChange2()">My Skills</h2>
+    <div class="skill-row">
+        <img src="Images/html.png" alt="">
+        <img src="Images/css.png" alt="">
+        <img src="Images/js.png" alt="">
+        <img src="Images/bootstrap.png" alt="">
+    </div>
+    <div class="skill-row">
+        <img src="Images/node.png" alt="">
+        <img src="Images/express.png" alt="">
+        <img src="Images/mongodb.png" alt="">
+        <img src="Images/sql.png" alt="">
+    </div>
+        <img src="Images/react.png" alt="" class="react">
 </div>
 
-<!-- <%- include('partials/footer'); %> -->
+<script>
+    const skillTitle = document.getElementById('skill-title');
+
+    const skillChange1 = () =>{
+        skillTitle.textContent = 'What I Do..';
+    }
+
+    const skillChange2 = () =>{
+        skillTitle.textContent = 'My Skills';
+    }
+</script>
+
+
+<%- include('partials/footer'); %>
