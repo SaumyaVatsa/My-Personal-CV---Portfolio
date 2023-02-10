@@ -10,7 +10,6 @@ app.set("view engine","ejs");
 app.use(express.static("public"));
 app.use('/',myRoutes);
 
-// This is my git repository
 
 app.listen(port,()=>{
     console.log("Server is listening on " + port);
