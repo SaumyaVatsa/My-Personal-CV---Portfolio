@@ -1,4 +1,22 @@
 <%- include('partials/header'); %>
 
+<div class="form-showcase">
+    <div class="contact-text">
+        <h2>For Work and Collaborations</h2>
+        <p>Please fill out the form to contact me!</p>
+    </div>
+    <div class="contact-form">
+        <form action="/contact" method="post">
+            <label for="name">Name: </label>
+            <input type="text" name="userName" placeholder="Name of Individual / Company">
+            <br>
+            <label for="userEmail">Email: </label>
+            <input type="email" name="userEmail" placeholder="Email for Contact! ">
+            <br>
+            <label for="workRelated">Work: </label>
+            <textarea name="workRelated" id="workTopic" cols="30" rows="10" placeholder="Why you want to contact me?"></textarea>
+        </form>
+    </div>
+</div>
 
 <%- include('partials/footer'); %>
