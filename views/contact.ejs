@@ -17,9 +17,15 @@
             <br>
             <textarea name="workRelated" id="workTopic" cols="30" rows="10" placeholder="Why you want to contact me?"></textarea>
             <br>
-            <button type="submit">Submit</button>
+            <button type="submit" onclick="confirmation()">Submit</button>
         </form>
     </div>
 </div>
+
+<script>
+    const confirmation = ()=>{
+        alert("Your Message Successfully Sent!");
+    }
+</script>
 
 <%- include('partials/footer'); %>
