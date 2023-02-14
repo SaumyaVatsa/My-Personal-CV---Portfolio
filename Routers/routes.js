@@ -17,7 +17,12 @@ router.get('/home',(req,res)=>{
 })
 
 router.get("/contact", (req,res)=>{
-    res.render('contact');
+    res.render('contact',{
+        linkedInURL: details.linkedIn,
+        instagramURL : details.instagram,
+        githubURL: details.github,
+        youtubeURL: details.youtube 
+    });
 })
 
 router.post('/contact',(req,res)=>{
@@ -40,8 +45,7 @@ router.post('/contact',(req,res)=>{
     })
 
     res.redirect('/contact')
-        
-
 })
+
 
 module.exports = router;

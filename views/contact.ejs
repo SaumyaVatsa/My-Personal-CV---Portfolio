@@ -28,4 +28,26 @@
     }
 </script>
 
+<div class="social-showcase">
+    <h2 class="title" id="social-title" onmouseover="changeTitle()" onmouseleave="changeTitle2()">Social Handles</h2>
+    <div class="social-handles">
+        <a href="<%- linkedInURL %>"><i class="fa-brands fa-linkedin fa-5x"></i></a>
+        <a href="<%- instagramURL %>"><i class="fa-brands fa-square-instagram fa-5x"></i></a>
+        <a href="<%- githubURL %>"><i class="fa-brands fa-github fa-5x"></i></a>
+        <a href="<%- youtubeURL %>"><i class="fa-brands fa-youtube fa-5x"></i></a>
+    </div>
+</div>
+
+<script>
+    const socialTitle = document.getElementById('social-title');
+
+    const changeTitle = ()=>{
+        socialTitle.textContent = 'Contact Me Here'
+    }
+
+    const changeTitle2 = ()=>{
+        socialTitle.textContent = 'Social Handles'
+    }
+</script>
+
 <%- include('partials/footer'); %>

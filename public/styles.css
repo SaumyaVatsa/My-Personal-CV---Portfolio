@@ -443,3 +443,22 @@ footer p{
 .contact-form button:focus{
     color: #0F4C75;
 }
+
+/* social handle showcase */
+
+.social-showcase{
+    margin: 20px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+#social-title{
+    margin-bottom: 50px;
+}
+
+.social-handles{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: #BBE1FA;
+}
