@@ -462,3 +462,28 @@ footer p{
     justify-content: space-around;
     color: #BBE1FA;
 }
+
+/* Admin */
+
+.admin-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 10px;
+    padding: 10px;
+}
+
+.box{
+    margin: 20px;
+    background-color: #BBE1FA;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box span{
+    color: #1B262C;
+    margin-right: 5px;
+}
+
+.box p{
+    color: #0F4C75;
+}

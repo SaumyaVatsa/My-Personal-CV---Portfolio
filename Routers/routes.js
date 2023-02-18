@@ -16,6 +16,8 @@ router.get('/home',(req,res)=>{
     })
 })
 
+// Contact Routes
+
 router.get("/contact", (req,res)=>{
     res.render('contact',{
         linkedInURL: details.linkedIn,
@@ -47,5 +49,20 @@ router.post('/contact',(req,res)=>{
     res.redirect('/contact')
 })
 
+// Admin Routes
+
+router.get('/admin',(req,res)=>{
+    Client.find({}, (err,item)=>{
+        if(err){
+            console.log(err);
+        }else if(item.length === 0 ){
+            res.send('No Data')
+        }else{
+            res.render('admin',{
+                messages: item
+            })
+        }
+    })
+})
 
 module.exports = router;
