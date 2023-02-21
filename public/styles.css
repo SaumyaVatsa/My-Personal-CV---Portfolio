@@ -487,3 +487,99 @@ footer p{
 .box p{
     color: #0F4C75;
 }
+
+
+
+/* Media Queries */
+
+@media(max-width: 750px){
+    .navbar{
+        margin-left: 5px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .showcase{
+        display: block;
+    }
+
+    .text-showcase{
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .per-img{
+        padding:20px;
+        text-align: center;
+    }
+
+    .about-showcase{
+        display: block;   
+    }
+
+    .about-showcase .img{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .exp-showcase hr{
+        width: 300px;
+    }
+
+    #t2021{
+        left: 180px;
+    }
+
+    .about-showcase .about{
+        padding-top: 10px;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .about-showcase .about button{
+        margin-top: 30px;
+        margin-left: 37%;
+    }
+
+    .title{
+        margin-left: 20%;
+    }
+
+    .skill-row{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 50px;
+    }
+
+    .skill-row img:hover{
+        height: 150px;
+        width: 190px;
+    }
+
+    .react{
+        margin-left: 35%;
+    }
+
+    .react:hover{
+        height: 150px;
+        width:190px;
+    }
+
+    .form-showcase{
+        display: block;
+    }
+
+    .contact-text{
+        padding-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .contact-form button{
+        margin-left: 25% ;
+    }
+
+    .admin-box{
+        display: block;
+    }
+
+}
