@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -651,20 +652,25 @@ footer p{
         padding-left: 20px;
     }
 
-    .contact-form input{
-        width: 250px;
+    form{
+        width: 75%;
     }
+
+    .contact-form input{
+        width: 130%;
+    }
+
 
     .contact-form #emailLabel{
         margin-left: 0;
     }
 
     .contact-form textarea{
-        width: 300px;
+        width: 130%;
     }
 
     .contact-form button{
-        margin-left: 20%;
+        margin: 10px auto;
     }
 
     #social-title{
