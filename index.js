@@ -5,14 +5,17 @@ const myRoutes = require('./Routers/routes')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+const dotenv = require('dotenv')
 
+dotenv.config();
+console.log(process.env)
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Mongo DB Connection
 mongoose.set('strictQuery', false)
-mongoose.connect("mongodb+srv://saumyavatsa2108:DZ9Bib4GKzqlVMvI@portfoliodb.iolobby.mongodb.net/portfolioDB", {useNewUrlParser: true});
+mongoose.connect(process.env.DATABASE, {useNewUrlParser: true});
 
 app.set("view engine","ejs");
 app.use(express.static("public"));
