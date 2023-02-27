@@ -18,7 +18,9 @@ app.set("view engine","ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}))
 app.use('/',myRoutes);
-app.use(cors())
+app.use(cors({
+    origin: ["https://saumyavatsa.onrender.com/", "https://localhost:3000"]
+}))
 
 
 app.listen(port,()=>{
